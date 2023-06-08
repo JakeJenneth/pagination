@@ -35,7 +35,7 @@ function processPeople(people) {
 
 
    function showPage(item) {
-      let active = document.querySelector('#pagination li.active')
+      const active = document.querySelector('#pagination li.active')
       if (active){
          active.classList.remove('active')
       }
@@ -59,7 +59,7 @@ function processPeople(people) {
    }
 
    function createCell(text, tr){
-      let td = document.createElement('td')
+      const td = document.createElement('td')
       td.innerHTML = text
       table.appendChild(td)
    }
