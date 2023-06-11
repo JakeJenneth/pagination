@@ -1,4 +1,6 @@
-const requestURL = 'https://swapi.dev/api/people/?format=json';
+const requestURL = 'https://swapi.dev/api/people/?format=json'
+const table = document.querySelector('#table')
+const pagination = document.querySelector('#pagination')
 
 function sendRequest(method, url) {
    return fetch(url)
@@ -12,8 +14,6 @@ sendRequest('GET', requestURL)
    .catch(err => console.log(err))
 
 
-const table = document.querySelector('#table')
-const pagination = document.querySelector('#pagination')
 const notesOnPage = 3
 const items = []
 
